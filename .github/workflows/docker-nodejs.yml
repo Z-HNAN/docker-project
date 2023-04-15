@@ -1,5 +1,7 @@
 name: Build and Publish nodejs-project Docker Image
 
+on: workflow_dispatch
+
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
