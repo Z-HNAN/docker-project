@@ -1,3 +1,4 @@
-nodejs工程
+nodejs-project
 ===
 
+base node:lts-bullseye-slim(v18)
