@@ -1,5 +1,5 @@
 personal docker images seed
 
-use Github Action
+use Github Actions
 
-Powered by ChatGPT.
+Powered by ChatGPT
