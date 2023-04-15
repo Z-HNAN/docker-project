@@ -3,8 +3,8 @@ FROM --platform=$BUILDPLATFORM node:16-alpine
 
 # 安装 pnmp 等工具
 RUN npm install -g pnpm && \
-    pnpm install -g typescript && \
-    pnpm install -g ts-node
+    npm install -g typescript && \
+    npm install -g ts-node
 
 # 设置全局的.npmrc文件
 RUN echo "registry=https://registry.npm.taobao.org/" > /root/.npmrc
