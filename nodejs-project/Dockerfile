@@ -1,5 +1,5 @@
 # 基础镜像
-FROM node:lts-bullseye-slim
+FROM node:16-buster-slim
 # FROM node:16-alpine
 
 # 安装 pnmp 等工具
@@ -30,5 +30,5 @@ VOLUME /app/project9
 ENV NODE_ENV=production
 
 # 默认不做任何操作
-CMD ["/bin/bash", "-c"]
-SHELL ["/bin/bash", "-c"]
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+# CMD ["/bin/bash", "-c"]
