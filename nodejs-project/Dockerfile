@@ -1,5 +1,6 @@
 # 基础镜像
-FROM node:lts-bullseye-slim
+# FROM node:lts-bullseye-slim
+FROM node:16-alpine
 
 # 安装 pnmp 等工具
 RUN npm install -g pnpm && \
@@ -27,3 +28,6 @@ VOLUME /app/project9
 
 # 设置环境变量
 ENV NODE_ENV=production
+
+# 默认不做任何操作
+CMD []
