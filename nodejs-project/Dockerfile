@@ -30,4 +30,4 @@ VOLUME /app/project9
 ENV NODE_ENV=production
 
 # 默认不做任何操作
-CMD []
+SHELL ["/bin/sh", "-c"]
