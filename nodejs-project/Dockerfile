@@ -1,6 +1,6 @@
 # 基础镜像
-# FROM node:lts-bullseye-slim
-FROM node:16-alpine
+FROM node:lts-bullseye-slim
+# FROM node:16-alpine
 
 # 安装 pnmp 等工具
 RUN npm install -g pnpm && \
@@ -30,4 +30,5 @@ VOLUME /app/project9
 ENV NODE_ENV=production
 
 # 默认不做任何操作
-SHELL ["/bin/sh", "-c"]
+CMD ["/bin/bash", "-c"]
+SHELL ["/bin/bash", "-c"]
