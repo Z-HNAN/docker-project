@@ -1,5 +1,5 @@
 # 基础镜像
-FROM --platform=$BUILDPLATFORM node:lts-bullseye-slim
+FROM node:lts-bullseye-slim
 
 # 安装 pnmp 等工具
 RUN npm install -g pnpm && \
