@@ -2,7 +2,6 @@
 FROM node:16-buster-slim
 # FROM node:16-alpine
 
-
 # 安装 pnmp 等工具
 RUN npm install -g pnpm && \
     npm install -g typescript && \
@@ -31,3 +30,6 @@ VOLUME /app/project9
 ENV NODE_ENV=production
 
 ENTRYPOINT ["/bin/bash"]
+
+# 保持容器一直运行
+CMD ["tail", "-f", "/dev/null"]
