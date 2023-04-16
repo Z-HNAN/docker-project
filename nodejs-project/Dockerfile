@@ -15,20 +15,8 @@ WORKDIR /app
 
 # 定义挂载卷
 VOLUME /root/.pnpm-store
-VOLUME /app/project0
-VOLUME /app/project1
-VOLUME /app/project2
-VOLUME /app/project3
-VOLUME /app/project4
-VOLUME /app/project5
-VOLUME /app/project6
-VOLUME /app/project7
-VOLUME /app/project8
-VOLUME /app/project9
+VOLUME /app
 
 # 设置环境变量
 ENV NODE_ENV=production
 
-# 保持容器一直运行
-ENTRYPOINT ["/bin/sh", "-c"]
-CMD ["tail", "-f", "/dev/null"]
