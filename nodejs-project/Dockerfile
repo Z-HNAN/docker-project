@@ -32,4 +32,4 @@ VOLUME /app/project9
 # 设置环境变量
 ENV NODE_ENV=production
 
-CMD ["/bin/bash"]
+ENTRYPOINT ["/bin/bash"]
