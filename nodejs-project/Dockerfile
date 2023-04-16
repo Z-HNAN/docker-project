@@ -2,8 +2,6 @@
 FROM node:16-buster-slim
 # FROM node:16-alpine
 
-# 默认不做任何操作
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # 安装 pnmp 等工具
 RUN npm install -g pnpm && \
