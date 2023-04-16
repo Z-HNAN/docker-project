@@ -29,7 +29,5 @@ VOLUME /app/project9
 # 设置环境变量
 ENV NODE_ENV=production
 
-ENTRYPOINT ["/bin/bash"]
-
 # 保持容器一直运行
-CMD ["tail", "-f", "/dev/null"]
+ENTRYPOINT ["tail", "-f", "/dev/null"]
