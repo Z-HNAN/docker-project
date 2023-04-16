@@ -30,5 +30,5 @@ VOLUME /app/project9
 ENV NODE_ENV=production
 
 # 保持容器一直运行
-# ENTRYPOINT ["tail", "-f", "/dev/null"]
+ENTRYPOINT ["/bin/sh", "-c"]
 CMD ["tail", "-f", "/dev/null"]
